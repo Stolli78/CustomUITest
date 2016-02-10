@@ -15,23 +15,23 @@ import android.widget.Toast;
 /**
  * Created by Markus on 10.02.2016.
  */
-public class MyButton extends View {
-    private static final String LOG_TAG = MyButton.class.getSimpleName();
+public class MyHippieButton extends View {
+    private static final String LOG_TAG = MyHippieButton.class.getSimpleName();
     Bitmap bmp;
 
-    public MyButton(Context context) {
+    public MyHippieButton(Context context) {
         super(context);
     }
 
-    public MyButton(Context context, AttributeSet attrs) {
+    public MyHippieButton(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MyButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MyHippieButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public MyButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public MyHippieButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
@@ -55,7 +55,7 @@ public class MyButton extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Toast.makeText(getContext(), "Awesome!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "Peace!", Toast.LENGTH_SHORT).show();
         return true;
     }
 }
