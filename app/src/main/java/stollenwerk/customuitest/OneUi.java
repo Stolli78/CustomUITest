@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
  */
 public class OneUi {
 
-    public static void addBottomButtonToLayout(RelativeLayout layout) {
+    public static void addBottomButton(RelativeLayout layout) {
         MyHippieButton myHippieButton = new MyHippieButton(layout.getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, 1);

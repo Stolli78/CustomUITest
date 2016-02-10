@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         defaultButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                OneUi.addBottomButtonToLayout((RelativeLayout)findViewById(R.id.layout));
+                OneUi.addBottomButton((RelativeLayout)findViewById(R.id.layout));
             }
         });
     }
