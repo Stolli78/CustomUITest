@@ -52,6 +52,13 @@ public class MyButton extends View {
     }
 
     @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int parentWidth = MeasureSpec.getSize(widthMeasureSpec);
+        int parentHeight = MeasureSpec.getSize(heightMeasureSpec);
+        this.setMeasuredDimension(parentWidth, 200);
+    }
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         Toast.makeText(getContext(), "Awesome!", Toast.LENGTH_SHORT).show();
         return true;
