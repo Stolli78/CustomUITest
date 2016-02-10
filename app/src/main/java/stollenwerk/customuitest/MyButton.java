@@ -37,10 +37,6 @@ public class MyButton extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        //super.onDraw(canvas);
-        //bad practice, for evaluation only; use an image store
-
-        //canvas.drawARGB(0, 0, 100, 100);
         Paint myPaint = new Paint();
         myPaint.setColor(Color.rgb(200, 100, 0));
         myPaint.setStrokeWidth(10);
@@ -54,7 +50,6 @@ public class MyButton extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int parentWidth = MeasureSpec.getSize(widthMeasureSpec);
-        int parentHeight = MeasureSpec.getSize(heightMeasureSpec);
         this.setMeasuredDimension(parentWidth, 200);
     }
 
